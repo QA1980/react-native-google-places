@@ -27,11 +27,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build Android Espresso Debug Build
-        run: yarn android.espresso
+        run: yarn android
       - name: Archive Apps
         uses: actions/upload-artifact@v2
         with:
-          name: Android SauceLabs Sample App Espresso Tests
+          name: Android  App Espresso Tests
           path: '**/app/build/outputs/apk/**/*.apk'
   ReleaseBuild:
     runs-on: ubuntu-20.04
