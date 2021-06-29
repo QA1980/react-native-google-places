@@ -3,7 +3,7 @@ name: Android app test
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - 'ios/**'
       - '**.md'
